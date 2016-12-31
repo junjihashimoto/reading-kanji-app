@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>漢字フラッシュカード</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="kanji.css">
+  <script src="kanji_data.js"></script>
+  <script src="kanji.js"></script>
+</head>
+<body>
+  <div class="frame">
+　　<div class="kanji-frame">
+      <div class="kanji" id="kanji" >
+      </div>
+    </div>
+    <div class="yomi-frame">
+      <div class="yomi" id="yomi" >
+      </div>
+    </div>
+    <div class="button-frame">
+      <div class="row">
+	<button type="button" class="btn btn-success button-width" id="start">0からスタート</button>
+      </div>
+      <div class="row">
+	<button type="button" class="btn btn-success button-width" id="restart">再開</button>
+      </div>
+      <div class="row">
+	<button type="button" class="btn btn-plimary button-width" id="stop">ストップ</button>
+      </div>
+      <div class="row">
+	<button type="button" class="btn btn-info button-width" id="play">読み上げ</button>
+      </div>
+      <div class="row">
+	<button type="button" class="btn btn-info button-width" id="shuffle">シャッフル</button>
+      </div>
+      <div class="row">
+	<div class="form-group" style="width:100px">
+	  <label for="exampleInputEmail2">問題の番号</label>
+	  <label for="exampleInputEmail2" id="number_max_min"></label>
+	  <input class="form-control" id="number" value="0">
+	</div>
+      </div>
+      <div class="row">
+	<label for="inputEmail3" class="control-label">問題スピード</label>
+      </div>
+      <div class="row">
+	<select class="form-control col-sm-1" id="speed">
+	  <option>5</option>
+	  <option>3</option>
+	  <option>1</option>
+	</select>
+	</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
